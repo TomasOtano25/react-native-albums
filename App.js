@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
 
-import Header from './src/components/headers/header';
+import Home from './src/screens/Home';
 
 /*const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -18,10 +12,7 @@ import Header from './src/components/headers/header';
 export default class App extends Component {
   render() {
     return (
-      <Header />
+      <Home />
     );
   }
-}
-
-const styles = StyleSheet.create({
-});
+};
