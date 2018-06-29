@@ -7,7 +7,7 @@ import AlbumList from '../components/AlbumList';
 export default class Home extends Component {
   render() {
     return (
-        <View>
+        <View style={{ flex: 1 }}>
             <Header>Albums</Header>
             <AlbumList />
         </View>

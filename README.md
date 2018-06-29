@@ -12,9 +12,21 @@ react-native run-android
 
  - Text
  - View
+ - ScrollView
  - Image
  ```js
  <Image style={{ width: 50, height: 50, borderRadius: 50 }} source={{ uri: album.thumbnail_image }} />
+
+ // Truco de imagenes de ocupen el espacio de su contendor
+ imageStyle: {
+    height: 300,
+    flex: 1,
+    width: null
+  }
+ ```
+ -Button
+ ```js
+<Button title={text} onPress={} />
  ```
 
 
@@ -35,6 +47,8 @@ react-native run-android
  alignItems='center' //horizantal
  alignItems='flex-end' //horizantal
  flexDirection='row'
+ alignSelf: 'stretch' // estira el elemento
+flex: 1 // el elemento ocupa todo el ancho
 
 shadowColor={}
 shadowOffSet={} //altura y ancho de la sombra
@@ -47,3 +61,10 @@ https://rallycoding.herokuapp.com/api/music_albums // link de api
 this.setState({});
 
 borderWidth
+
+## Touchable
+
+-TouchableHighlight
+> Cambia de color
+-TouchableOpacity
+> Se oculta
