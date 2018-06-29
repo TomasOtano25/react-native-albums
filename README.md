@@ -13,6 +13,7 @@ react-native run-android
  - Text
  - View
  - ScrollView
+ - Linking // me permite interactual con las demas aplicacion (navegador)
  - Image
  ```js
  <Image style={{ width: 50, height: 50, borderRadius: 50 }} source={{ uri: album.thumbnail_image }} />
